@@ -1,0 +1,47 @@
+# Data - NEVER commit (CIC-IDS2017 is hundreds of MB)
+data/
+*.csv
+*.zip
+*.pcap
+*.parquet
+
+# Trained models and artifacts
+*.pkl
+*.joblib
+*.h5
+models/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets (API keys)
+.env
+*.key
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep empty directories tracked
+!data/**/.gitkeep
+
+# Large outputs (remove these lines if you want to commit final plots)
+outputs/*.png
+outputs/*.pdf
+!outputs/.gitkeep
